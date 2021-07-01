@@ -4,11 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --watchAll",
+    "test:report": "jest --coverage=true"
   },
   "author": "Crystal Morris",
   "license": "ISC",
   "dependencies": {
     "jest": "^27.0.6"
+    
   }
+  
 }
+
