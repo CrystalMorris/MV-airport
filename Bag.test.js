@@ -7,7 +7,7 @@ describe('bag object',()=>{
     })
 
     test('bag has name', () => {
-        expect(testBag.name).toBe("barker1")
+        expect(testBag.bagName).toBe("barker1")
     })
 
 })

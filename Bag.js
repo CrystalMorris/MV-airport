@@ -1,7 +1,7 @@
 class Bag{
-    constructor(weight, name){
+    constructor(weight, bagName){
         this.weight = weight,
-        this.name = name
+        this.bagName = bagName
     }
     
 

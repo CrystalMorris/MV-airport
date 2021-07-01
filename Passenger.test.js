@@ -2,9 +2,10 @@ const Plane = require('./Plane')
 const Airport = require('./Airport')
 const Passenger = require('./Passenger')
 const Bag = require('./Bag')
+const Person = require('./Person')
 
 describe ('passenger object',()=>{
-    const bbarker = new Passenger('Bob Barker')
+    const bbarker = new Passenger('Bob Barker','123')
     
     test('passenger has name',() => {
         expect(bbarker.name).toBe('Bob Barker')
@@ -29,9 +30,23 @@ describe ('passenger object',()=>{
        expect(bbarker.bags[2].weight).toBe(20) && (bbarker.numOfBags).toBe(3) && (bbarker.bags[0].name).toBe('barker0')
    })
 
+   test('passenger should have a ticket number', ()=>{
+       expect(bbarker.ticketNum).toBe('123')
+   })
 
-
-
+   test('passenger is a person',()=>{
+        expect(bbarker instanceof Person).toBeTruthy
+   })
+   test('passenger can call attendent',()=>{
+        console.log = jest.fn()
+        bbarker.callAttendent()
+        expect(console.log).toHaveBeenCalledWith(`Bob Barker has pressed the "Call Attendant" button`)
+   })
+   test('passenger can take a nap',()=>{
+    console.log = jest.fn()
+    bbarker.takeNap()
+    expect(console.log).toHaveBeenCalledWith(`Bob Barker says: "Zzzzzz Zzzzzz"`)
+})
 
 
 })
