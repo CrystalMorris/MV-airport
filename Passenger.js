@@ -5,7 +5,7 @@ class Passenger extends Person{
         super(name)
         this.ticketNum = ticketNum
     }
-    callAttendent(){
+    callAttendant(){
         console.log(`${this.name} has pressed the "Call Attendant" button`)
     }
     takeNap(){

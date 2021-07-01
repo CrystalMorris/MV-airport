@@ -1,0 +1,40 @@
+```
+Airport Class Diagram
+
+```
+class Airport{
+	airports: array
+	name: string
+	planes: array
+	addPlane()
+	}
+
+class Person{
+	name: string	
+	bags: []
+	numOfBags = int
+	packBag()
+	}
+class Passenger extends Person{
+	ticketNum: string
+	callAttendant()
+	takeNap()
+	}
+class Crew extends Person{}
+
+class Bag{
+	weight: int
+	bagName : string
+	}
+class Plane{
+	tailNum: string
+	origin: string
+	destination: string
+	passengers: array
+	crew: array
+	totalBags: array
+	setOrigin()
+	setDestination()
+	boardPassengers()
+	
+}

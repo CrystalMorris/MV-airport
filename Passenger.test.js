@@ -37,9 +37,9 @@ describe ('passenger object',()=>{
    test('passenger is a person',()=>{
         expect(bbarker instanceof Person).toBeTruthy
    })
-   test('passenger can call attendent',()=>{
+   test('passenger can call attendant',()=>{
         console.log = jest.fn()
-        bbarker.callAttendent()
+        bbarker.callAttendant()
         expect(console.log).toHaveBeenCalledWith(`Bob Barker has pressed the "Call Attendant" button`)
    })
    test('passenger can take a nap',()=>{
