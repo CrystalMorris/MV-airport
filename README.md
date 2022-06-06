@@ -1,9 +1,9 @@
 # MV-airport
 
-Set up
+## Set up
 
-npm install
++ npm install
 
-npm test
++ npm test
 
-npm test:report
++ npm test:report
